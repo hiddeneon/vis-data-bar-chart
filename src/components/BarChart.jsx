@@ -92,9 +92,7 @@ const BarChart = () => {
         .style("font-size", "12px");
 
       const barWidth = Math.max(
-        (width - marginLeft - marginRight) / data.data.length,
-        1
-      );
+        (width - marginLeft - marginRight) / data.data.length,1);
 
       svg
         .selectAll("rect")
@@ -112,12 +110,14 @@ const BarChart = () => {
         .style("fill", "grey")
         .on("mouseover", function (event, d) {
           let i = +this.getAttribute("index");
+
           overlay
             .style("opacity", 0.9)
             .style("left", marginLeft + i * barWidth + "px")
             .style("top", height - marginBottom - d + "px")
             .style("height", height - marginBottom - yScale(d) + "px")
             .style("width", barWidth + "px");
+            
           tooltip
             .style("opacity", 0.9)
             .html(
