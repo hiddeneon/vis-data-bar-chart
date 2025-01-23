@@ -1,8 +1,57 @@
-# React + Vite
+# React GDP Bar Chart
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project visualizes the United States GDP data using a bar chart. It was rewritten from a vanilla JavaScript implementation to a modern React application with Vite for a better development experience and modularity.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Visualizes GDP data using D3.js.
+- Responsive and interactive bar chart with tooltips and hover effects.
+- Modern React architecture for better maintainability and scalability.
+
+## Project Structure
+
+├── public/           # Static assets
+├── src/
+│   ├── components/
+│   │   └── BarChart.jsx  # Bar chart implementation using React and D3
+│   ├── styles/
+│   │   └── BarChart.css  # Styles for the bar chart
+│   └── App.jsx          # Main application component
+├── package.json       # Project dependencies and scripts
+└── README.md          # Project documentation
+
+## Installation
+
+To run this project locally, follow these steps:
+
+### Prerequisites
+
+- Node.js (v16 or later recommended)
+- npm or yarn
+
+### Steps
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone <repository-url>
+   cd <repository-folder>
+   ```
+
+2. **Install dependencies**:
+
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server**:
+
+   ```bash
+   npm run dev
+   ```
+
+## Technologies Used
+
+- **React**: For building the user interface.
+- **D3.js**: For creating the bar chart and handling data visualization.
+- **Vite**: For fast and efficient bundling.
